@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -160,7 +160,7 @@
                     top: 100%;
                     right: 0;
                     height: 40px;
-                    background: #f5cf52;
+                    background: #52c1f5;
                 }
 
                 @keyframes stick {
@@ -217,7 +217,7 @@
                 .glasses {
                     position: absolute;
                     left: 0;
-                    background: url(assests/glassss.png);
+                    background: url(Launch);
                     width: 100%;
                     background-size: 100%;
                     height: 100vh;
@@ -258,13 +258,18 @@
             margin: 0;
             padding: 0;
         }
+        body {
+    background-color: #1e262a;
+}
+
 
         body {
-            background: url(assests/dsgn_23.jpg);
+            background: url(Launch.jpeg);
             background-size: cover;
             width: 100%;
             height: 100vh;
             overflow: hidden;
+            position: relative;
         }
 
         .launch-btn-section {
@@ -280,7 +285,7 @@
             border: 1px solid black;
             width: 300px;
             height: 80px;
-            background-color: white;
+            /* background-color: white; */
             display: grid;
             place-items: center;
             border-radius: 10px;
@@ -290,6 +295,13 @@
             z-index: 100;
             opacity: 0;
             transition: opacity 200ms ease;
+            backdrop-filter: blur(25px) saturate(136%);
+    -webkit-backdrop-filter: blur(25px) saturate(136%);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    position: absolute;
+    top:100px;
         }
 
         .launch-btn:hover {
@@ -310,6 +322,9 @@
             align-items: center;
             flex-direction: column;
             color: white;
+            position: absolute;
+            top: 50px;
+           
         }
 
         .curtain-side,
@@ -373,9 +388,8 @@
             transform: angle;
         }
     </style>
-    <script>
-
-        $('.launching-section').hide();
+    <script> 
+  $('.launching-section').hide();
         $('.launching').hide();
         $('.bg-blasts').hide();
 
@@ -420,3 +434,5 @@
 </body>
 
 </html>
+
+
